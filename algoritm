@@ -1,0 +1,5 @@
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///result.db'
+db = SQLAlchemy(app)
+tcp = 80(http)
+tcp = 443(https)
