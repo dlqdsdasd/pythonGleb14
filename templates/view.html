@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/moi.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
+
+    <title>Первый урок</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+
+
+        </form>
+      </div>
+    </nav>
+</header>
+<body>
+{% for el in a %}
+    <div class="container p-2 text-dark rounded bg-light background-container">
+            <h4 class="text-center">{{ el.zag }}</h4>
+            <p class="p-1 m-1">{{ b }}</p>
+            <p class="p-1 m-1">{{ c }}</p>
+            <input type="submit" class="btn btn-success center mx-auto d-block m-3" value="Вернуться назад">
+        </form>
+    </div>
+{% endfor %}
+</body>
+</html>
+
+
